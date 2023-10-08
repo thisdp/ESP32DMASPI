@@ -363,7 +363,7 @@ private:
         transactions.back().base.addr = addr;
         transactions.back().base.length = 8 * size;  // in bit size
         transactions.back().base.rxlength = 0;       // set to same one with length
-        transactions.back().base.user = NULL;
+        transactions.back().base.user = (void*)this;
         transactions.back().base.tx_buffer = tx_buf;
         transactions.back().base.rx_buffer = rx_buf;
 
